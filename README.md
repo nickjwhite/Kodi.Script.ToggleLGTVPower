@@ -13,3 +13,7 @@ This addon uses cec-client, rather than Kodi's inbuilt CEC functions.
 This is because Kodi offers no way to determine the status of a CEC
 device. Running cec-client tends to disable Kodi's CEC connection,
 so this addon does everything with cec-client instead.
+
+The script can be bound to a button on your remote by adding a line
+like this to your keymap.xml:
+  <sleep>RunAddon(script.togglelgtvpower)</sleep>
