@@ -1,4 +1,4 @@
-# Kodi TogglePower script
+# Kodi Toggle LG TV Power script
 
 This addon gets the current power status of the TV using CEC, and turns
 it off if it is on, or on if it is off. It uses CEC to turn the TV on,
