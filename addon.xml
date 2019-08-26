@@ -12,9 +12,9 @@
 		<disclaimer lang="en">This requires the cec-client command to be installed, which is part of the cec-util debian package.</disclaimer>
 		<platform>linux</platform>
 		<license>GPL-3.0</license>
-		<forum></forum>
-		<website></website>
-		<source></source>
+		<forum>https://forum.kodi.tv/showthread.php?tid=346658</forum>
+		<website>https://github.com/nickjwhite/Kodi.Script.ToggleLGTVPower</website>
+		<source>https://github.com/nickjwhite/Kodi.Script.ToggleLGTVPower</source>
 		<email>togglelgtvpower@njw.name</email>
 		<assets>
 			<icon>icon.png</icon>
