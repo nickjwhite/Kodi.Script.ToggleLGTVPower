@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.togglelgtvpower" name="Toggle LG TV Power" version="0.0.1" provider-name="njw">
 	<requires>
-		<import addon="kodi.script.turnofflgtv" version="1.0.0">
+		<import addon="kodi.script.turnofflgtv" version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.python.script" library="script.py">
 		<provides>executable</provides>
@@ -11,7 +11,7 @@
 		<description lang="en_GB">Script to toggle the power of an LG TV. This uses CEC to turn the TV on, and the Kodi.Script.TurnOffLGTV addon to turn it off.</description>
 		<disclaimer lang="en">This requires the cec-client command to be installed, which is part of the cec-util debian package.</disclaimer>
 		<platform>linux</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<license>GPL-3.0</license>
 		<forum></forum>
 		<website></website>
 		<source></source>
