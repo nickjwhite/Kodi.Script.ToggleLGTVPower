@@ -16,9 +16,9 @@
 		<website></website>
 		<source></source>
 		<email>togglelgtvpower@njw.name</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
 	</extension>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-	</assets>
 </addon>
