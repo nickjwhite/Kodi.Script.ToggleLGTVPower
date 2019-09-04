@@ -7,7 +7,9 @@ and the Kodi.Script.TurnOffLGTV script to turn the TV off.
 The Kodi.Script.TurnOffLGTV script can be found at
 https://github.com/BillyNate/Kodi.Script.TurnOffLGTV
 
-This addon requires the cec-utils package to be installed.
+This addon requires the cec-utils package to be installed, and works
+most reliably with Kodi's CEC support disabled (Settings -> System ->
+Input -> Peripherals -> CEC Adapter).
 
 This addon uses cec-client, rather than Kodi's inbuilt CEC functions.
 This is because Kodi offers no way to determine the status of a CEC

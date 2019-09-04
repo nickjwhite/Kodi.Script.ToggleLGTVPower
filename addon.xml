@@ -9,7 +9,7 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Script to toggle the power of an LG TV</summary>
 		<description lang="en">Script to toggle the power of an LG TV. This uses CEC to get the TV status and turn the TV on, and the Kodi.Script.TurnOffLGTV addon to turn it off.</description>
-		<disclaimer lang="en">This requires the cec-client command to be installed, which is part of the cec-util debian package.</disclaimer>
+		<disclaimer lang="en">This requires the cec-client command to be installed, which is part of the cec-util debian package. It also works most reliably with Kodi's CEC support disabled (Settings -> System -> Input -> Peripherals -> CEC Adapter).</disclaimer>
 		<platform>linux</platform>
 		<license>GPL-3.0</license>
 		<forum>https://forum.kodi.tv/showthread.php?tid=346658</forum>
