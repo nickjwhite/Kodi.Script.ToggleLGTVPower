@@ -10,7 +10,7 @@ xbmc.log("Toggling TV power", xbmc.LOGNOTICE)
 try:
 	s = subprocess.check_output('echo pow 0 | cec-client -s -d 1 -m', shell=True)
 except:
-	xbmc.log("Kodi.Script.TogglePower: cec-client command to get TV status failed")
+	xbmc.log("Kodi.Script.TogglePower: cec-client command to get TV status failed, may wake TV anyway", xbmc.LOGERROR)
 	quit()
 reStatus = re.compile(b'power status: (.+)')
 match = re.search(reStatus, s)
@@ -21,10 +21,10 @@ else:
 	state = 'unknown'
 
 if state == 'on':
-	xbmc.log("Kodi.Script.TogglePower: Turning off TV with Kodi.Script.TurnOffLGTV")
+	xbmc.log("Kodi.Script.TogglePower: Turning off TV with Kodi.Script.TurnOffLGTV", xbmc.LOGNOTICE)
 	xbmc.executebuiltin('RunAddon(kodi.script.turnofflgtv)')
 else:
-	xbmc.log("Kodi.Script.TogglePower: Turning on TV with cec-client")
+	xbmc.log("Kodi.Script.TogglePower: Turning on TV with cec-client", xbmc.LOGNOTICE)
 	# Running cec-client has a habit of disabling Kodi's CEC connection,
 	# so we can't use its inbuilt CECActivateSource command
 	#xbmc.executebuiltin('CECActivateSource')
