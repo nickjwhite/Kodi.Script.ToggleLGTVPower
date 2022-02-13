@@ -8,6 +8,7 @@ import xbmcplugin
 import xbmcvfs
 
 lockdir = 'special://temp/kodi.script.togglepower.inprogress/'
+bin = '/usr/bin/cec-client'
 
 exists = xbmcvfs.exists(lockdir)
 if exists:
