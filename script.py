@@ -34,7 +34,7 @@ xbmc.log("Toggling TV power", xbmc.LOGINFO)
 
 # The cec-client command can sometimes cause TV to wake from standby, however
 # this is fine as we only use it when it should wake if in standby
-s = subprocess.run('echo pow 0 | ' + bin + ' -s -d 1 -m', shell=True, capture_output=True)
+s = subprocess.run('echo pow 0 | ' + bin + ' -s -d 1', shell=True, capture_output=True)
 if s.returncode != 0:
 	xbmc.log("Kodi.Script.ToggleLGTVPower: cec-client command to get TV status failed, may wake TV anyway", xbmc.LOGERROR)
 	xbmc.log(s.stdout.decode(), xbmc.LOGERROR)
@@ -65,7 +65,7 @@ else:
 	# Running cec-client has a habit of disabling Kodi's CEC connection,
 	# so we can't use its inbuilt CECActivateSource command
 	#xbmc.executebuiltin('CECActivateSource')
-	s = subprocess.run('echo on 0 | ' + bin + ' -s -d 1 -m', shell=True)
+	s = subprocess.run('echo on 0 | ' + bin + ' -s -d 1', shell=True)
 	if s.returncode != 0:
 		xbmc.log("Kodi.Script.ToggleLGTVPower: cec-client command to turn on TV failed", xbmc.LOGERROR)
 
